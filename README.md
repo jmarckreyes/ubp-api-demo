@@ -1,10 +1,5 @@
-# Cardo - The Province Man's Web App
+# UBP API Demo
 
-This web app requires Node 8 or higher.
+Kindly run it under `node` and not `nodemon` for now as I still have to fix the configuration files so it won't conflict with `simple-json-store`.
 
-How to run the web app.
-
-```
-npm install
-node index.js
-```
+Thanks.
