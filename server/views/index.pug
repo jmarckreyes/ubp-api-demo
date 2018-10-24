@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title= title
+
+    link(rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous")
+
+  body
+    main(role="main" class="container")
+      h1#h1Title CARDO!!!
+      p Ang Probinsyano - Season 3
+      .row
+        each actor in actors
+          .col
+            span= actor.name
+      div.row
+        each season in seasons
+          div(class="col" id="column")
+            h4= season
+            img(
+              style="width: 100%; padding: 5px;"
+              src="/cardo.jpg")
+    script(src="/cardo.js")
